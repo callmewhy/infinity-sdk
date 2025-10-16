@@ -1,0 +1,22 @@
+{
+  "name": "infinity-sdk",
+  "private": true,
+  "scripts": {
+    "dev:picasso": "turbo dev --filter picasso",
+    "dev:sdk": "turbo dev --concurrency 50 --filter @infinity/*",
+    "build": "turbo build",
+    "clean": "turbo run clean",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "launch": "pnpm run --filter api launch-tokens"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.3.3",
+    "typescript": "5.3.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "packageManager": "pnpm@9.12.0"
+}

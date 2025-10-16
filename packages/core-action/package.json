@@ -1,0 +1,27 @@
+{
+  "name": "@infinity/core-action",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc -w",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@telegraf/types": "^7.1.0",
+    "@types/node": "^20",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@infinity/types": "workspace:*",
+    "@infinity/core-perception": "workspace:*",
+    "@infinity/core-settings": "workspace:*",
+    "telegraf": "^4.16.3",
+    "twitter-api-v2": "^1.19.0"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@infinity/sdk",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc -w",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@ai-sdk/amazon-bedrock": "^1.0.9",
+    "@ai-sdk/deepseek": "^0.0.6",
+    "@ai-sdk/google-vertex": "^2.0.19",
+    "@ai-sdk/openai": "^1.0.20",
+    "@infinity/core-action": "workspace:*",
+    "@infinity/core-inspiration": "workspace:*",
+    "@infinity/core-model": "workspace:*",
+    "@infinity/core-perception": "workspace:*",
+    "@infinity/core-settings": "workspace:*",
+    "@infinity/core-task": "workspace:*",
+    "@infinity/core-tool": "workspace:*",
+    "@infinity/types": "workspace:*",
+    "ai": "^4.0.38"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/bn.js": "^5.1.6",
+    "@types/chai": "^4.3.20",
+    "@types/he": "^1.2.3",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "^20",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1"
+  }
+}

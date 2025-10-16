@@ -1,0 +1,24 @@
+{
+  "name": "@infinity/solana-extension",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc -w",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@infinity/types": "workspace:*",
+    "@infinity/core-settings": "workspace:*",
+    "@solana/web3.js": "^1.98.0"
+  }
+}

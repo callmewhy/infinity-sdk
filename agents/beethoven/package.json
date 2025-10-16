@@ -1,0 +1,24 @@
+{
+  "name": "beethoven",
+  "private": true,
+  "main": "main.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsx src/main.ts",
+    "start": "dotenv -e .env -- node ./dist/main.js",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@infinity/sdk": "workspace:*",
+    "dotenv": "^16.4.7",
+    "google-auth-library": "^9.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "tsx": "^4.19.2"
+  }
+}

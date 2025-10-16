@@ -1,0 +1,27 @@
+{
+  "name": "@infinity/core-perception",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc -w",
+    "lint": "eslint \"src/**/*.ts\""
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@infinity/types": "workspace:*",
+    "@infinity/core-settings": "workspace:*",
+    "axios": "^1.7.9",
+    "@cmdcode/crypto-utils": "^2.4.6",
+    "@cmdcode/tapscript": "1.5.1",
+    "twitter-api-v2": "^1.19.0"
+  }
+}
